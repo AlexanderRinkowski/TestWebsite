@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Audio Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .intro-text {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intro-text">
+            <p>Welcome! Please view the image below and listen to the audio.</p>
+        </div>
+        <img src="image.jpg" alt="Sample Image" width="300" height="200">
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br><br>
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <script>
+        function nextPage() {
+            alert('Next button clicked!');
+        }
+    </script>
+</body>
+</html>
